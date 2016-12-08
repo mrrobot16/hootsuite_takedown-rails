@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  scheduled: 2016-12-08 12:34:43
+
+two:
+  description: MyString
+  scheduled: 2016-12-08 12:34:43
