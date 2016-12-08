@@ -27,7 +27,8 @@ p "@twitter_client"
 p @twitter_client
 p "<************************>"
     if @tweet.save
-
+      @twitter_client.update(@tweet.description)
+      p "inside if @tweet.save"
       render json: @tweet, status: :created, location: @tweet
     else
       render json: @tweet.errors, status: :unprocessable_entity
