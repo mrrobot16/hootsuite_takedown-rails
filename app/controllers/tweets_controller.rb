@@ -17,6 +17,7 @@ class TweetsController < ApplicationController
   def create
     p "tweets_params: "
     p tweet_params
+    p "tweets_params: ****************>>>>>>>>>>>>>>>>>>>>>>>>>>"
     @tweet = Tweet.new(tweet_params)
     p "<************************>"
 p "@todo.description"
