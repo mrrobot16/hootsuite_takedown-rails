@@ -16,7 +16,7 @@ class TweetsController < ApplicationController
   # POST /tweets
   def create
     p "tweets_params: ****************>>>>>>>>>>>>>>>>>>>>>>>>>>"
-    p tweet_params
+    p tweet_params.class
     p "tweets_params: ****************>>>>>>>>>>>>>>>>>>>>>>>>>>"
     @tweet = Tweet.new(tweet_params)
     p "<************************>"
