@@ -15,20 +15,20 @@ class TweetsController < ApplicationController
 
   # POST /tweets
   def create
-    p "tweets_params: "
+    p "tweets_params: ****************>>>>>>>>>>>>>>>>>>>>>>>>>>"
     p tweet_params
     p "tweets_params: ****************>>>>>>>>>>>>>>>>>>>>>>>>>>"
     @tweet = Tweet.new(tweet_params)
     p "<************************>"
-p "@todo.description"
-p @tweet.description
-p "tweet_params:"
-p tweet_params
-p "todo_params.class"
-p tweet_params.class
-p "@twitter_client"
-p @twitter_client
-p "<************************>"
+    p "@todo.description"
+    p @tweet.description
+    p "tweet_params:"
+    p tweet_params
+    p "todo_params.class"
+    p tweet_params.class
+    p "@twitter_client"
+    p @twitter_client
+    p "<************************>"
     if @tweet.save
       @twitter_client.update(@tweet.description)
       p "inside if @tweet.save"
